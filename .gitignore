@@ -1,0 +1,9 @@
+#Directory
+Debug/
+Release/
+.vs/
+x64/
+
+#.vtu .prof
+*.vtu
+*.prof
