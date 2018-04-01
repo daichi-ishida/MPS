@@ -3,6 +3,7 @@
 #include <sstream>
 #include <iomanip> 
 #include <string>
+#include <direct.h>
 #include <Eigen/Core>
 #include "constants.h"
 #include "Scene.h"
@@ -39,6 +40,7 @@ void Scene::makeParticleSet()
 
 void Scene::writeData()
 {
+    _mkdir("output");
     writeData_inVtuFormat();
     //writeData_inProfFormat();
     ++m_file_num;
